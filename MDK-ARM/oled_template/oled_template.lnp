@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"oled_template\startup_stm32f103xb.o"
+"oled_template\main.o"
+"oled_template\gpio.o"
+"oled_template\i2c.o"
+"oled_template\usart.o"
+"oled_template\stm32f1xx_it.o"
+"oled_template\stm32f1xx_hal_msp.o"
+"oled_template\stm32f1xx_hal_gpio_ex.o"
+"oled_template\stm32f1xx_hal_i2c.o"
+"oled_template\stm32f1xx_hal.o"
+"oled_template\stm32f1xx_hal_rcc.o"
+"oled_template\stm32f1xx_hal_rcc_ex.o"
+"oled_template\stm32f1xx_hal_gpio.o"
+"oled_template\stm32f1xx_hal_dma.o"
+"oled_template\stm32f1xx_hal_cortex.o"
+"oled_template\stm32f1xx_hal_pwr.o"
+"oled_template\stm32f1xx_hal_flash.o"
+"oled_template\stm32f1xx_hal_flash_ex.o"
+"oled_template\stm32f1xx_hal_exti.o"
+"oled_template\stm32f1xx_hal_uart.o"
+"oled_template\system_stm32f1xx.o"
+"oled_template\oled.o"
+"oled_template\dxlora.o"
+--strict --scatter "oled_template\oled_template.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "oled_template.map" -o oled_template\oled_template.axf
